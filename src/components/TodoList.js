@@ -2,10 +2,14 @@
 // feel free to change this component.js into TodoList.js
 import React from 'react';
 
+import Todo from './Todo';
+
 class TodoList extends React.Component {
   render() {
     return (
-      <p>{this.props.list}</p>
+      <div>
+        {this.props.list.map(todo => <Todo value={todo}/>)}
+      </div>
     )
   }
 }

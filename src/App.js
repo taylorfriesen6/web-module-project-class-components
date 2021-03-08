@@ -16,7 +16,7 @@ class App extends React.Component {
 
   addTodo = (entry) => {
     this.setState({
-      list: this.list.concat(entry),
+      list: this.state.list.concat(entry),
     });
   }
 
